@@ -11,15 +11,13 @@ npm run dev
 
 The local page intentionally displays an “Open this in Tavrn” state because it has no Tavrn parent frame.
 
-## Publish to GitHub Pages
+## Deploy to GitHub Pages
 
-Build the static site, then publish the `dist/` folder through GitHub Pages:
+Pushing to `main` runs the included GitHub Actions Pages workflow. In the repository settings, set **Pages** to **GitHub Actions** once; the deployed demo will be available at:
 
-```bash
-npm run build
-```
+`https://tavrnapps.github.io/activities-demo/`
 
-Use the final Pages URL when submitting the activity in TavKit. The manifest’s activity ID, version, hosted URL, and exact origin must be reviewed together before Tavrn can embed it.
+Use that final Pages URL as the hosted URL in TavKit, and use `https://tavrnapps.github.io` as the approved origin. `public/activity.json` and `public/tavicon.png` are served with the build and contain the reviewable manifest metadata. The manifest’s activity ID, version, hosted URL, and exact origin must be reviewed together before Tavrn can embed it.
 
 ## What this demonstrates
 

@@ -1,0 +1,9 @@
+{
+  "id": "top.tavrn.examples.shared-counter",
+  "name": "Shared Counter",
+  "version": "1.0.0",
+  "description": "A tiny real-time counter for testing Tavrn Activities.",
+  "icon": "./tavicon.png",
+  "permissions": ["room.read", "participants.read"],
+  "placements": ["room", "call"]
+}
